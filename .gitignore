@@ -1,0 +1,56 @@
+# ========================
+# Python 相关文件
+# ========================
+
+# 忽略 Python 编译文件
+code/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+tmp.py
+
+.history/
+
+# 虚拟环境
+venv/
+env/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ========================
+# 日志 & 输出文件
+# ========================
+
+# 忽略日志文件
+log/
+*.log
+
+# Matched Frames (输出图片)
+matched_frames/
+
+# video (视频素材)
+video/
+
+# ========================
+# Git 相关
+# ========================
+
+# 忽略 Git merge 时的冲突文件
+*.orig
+*.rej
+
+# ========================
+# Mac/Linux/Windows 系统相关
+# ========================
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Linux
+*~
