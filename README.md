@@ -11,7 +11,7 @@
 ✅ **日志记录**：自动生成日志，记录检测结果  
 ✅ **多种优化**：支持 `mask` 过滤、Git LFS 处理大文件  
 
----
+<!-- ---
 
 ## 🚀 安装 | Installation
 ### **1️ 克隆项目 | Clone the repository**
@@ -29,7 +29,7 @@ python calculate_scale_in_image.py --frame "matched_frames/sample.jpg" --templat
 ### **2️⃣ 在视频中查找特定模板 | Detect a template in a video**
 ```sh
 python detect_template_in_video.py --video "video/gameplay.mp4" --template "template.png"
-```
+``` -->
 
 ---
 
