@@ -1,10 +1,3 @@
-### **README.md（双语，双版本）**
-以下是适用于 **ID5-Clips** 项目的 `README.md`，包含中英文双版本，涵盖 **项目简介、功能、安装使用方法、贡献指南** 等。
-
----
-
-## **📌 `README.md`（双语）**
-```markdown
 # ID5-Clips 🎥
 
 ## 📖 项目简介 | Project Introduction
@@ -105,20 +98,5 @@ This project is licensed under the **MIT License** - see the [`LICENSE`](LICENSE
 ## ✨ 致谢 | Acknowledgments
 感谢 OpenCV、GitHub 社区以及所有贡献者！  
 Thanks to OpenCV, the GitHub community, and all contributors! 🎉
-```
 
 ---
-
-## **📌 README 结构概览**
-1. **项目介绍（双语）**
-2. **功能特点（双语）**
-3. **安装步骤（双语）**
-4. **使用方法（双语）**
-5. **目录结构（双语）**
-6. **贡献指南（双语）**
-7. **许可证（双语）**
-8. **致谢（双语）**
-
----
-
-### **🎯 这样你的 `README.md` 既清晰直观，又能方便不同语言的用户使用！🚀**
