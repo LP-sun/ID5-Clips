@@ -14,25 +14,11 @@
 ---
 
 ## 🚀 安装 | Installation
-### **1️⃣ 克隆项目 | Clone the repository**
+### **1️ 克隆项目 | Clone the repository**
 ```sh
 git clone https://github.com/LP-sun/ID5-Clips.git
 cd ID5-Clips
 ```
-
-### **2️⃣ 创建虚拟环境（可选） | Create a virtual environment (optional)**
-```sh
-python -m venv venv
-source venv/bin/activate  # macOS/Linux
-venv\Scripts\activate      # Windows
-```
-
-### **3️⃣ 安装依赖 | Install dependencies**
-```sh
-pip install -r requirements.txt
-```
-
----
 
 ## 🛠 使用 | Usage
 ### **1️⃣ 计算 `scale_factor` | Compute `scale_factor` for a specific resolution**
@@ -58,38 +44,5 @@ ID5-Clips/
 ├── log/                        # 日志文件目录
 └── video/                      # 存放视频素材
 ```
-
----
-
-## 🤝 贡献 | Contributing
-欢迎提交 PR、Issue，帮助改进 ID5-Clips！  
-Welcome to contribute via PRs or Issues to improve ID5-Clips!
-
-1. Fork 本仓库 | Fork this repository  
-2. 创建新分支 | Create a new branch  
-   ```sh
-   git checkout -b feature-xyz
-   ```
-3. 提交更改 | Commit your changes  
-   ```sh
-   git commit -m "Added feature XYZ"
-   ```
-4. 推送分支 | Push the branch  
-   ```sh
-   git push origin feature-xyz
-   ```
-5. 提交 PR | Create a Pull Request  
-
----
-
-## 📜 许可证 | License
-本项目采用 **MIT License**，详情见 [`LICENSE`](LICENSE) 文件。  
-This project is licensed under the **MIT License** - see the [`LICENSE`](LICENSE) file for details.
-
----
-
-## ✨ 致谢 | Acknowledgments
-感谢 OpenCV、GitHub 社区以及所有贡献者！  
-Thanks to OpenCV, the GitHub community, and all contributors! 🎉
 
 ---
