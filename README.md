@@ -3,8 +3,6 @@
 ## 📖 项目简介 | Project Introduction
 **ID5-Clips** 是一个用于**自动剪辑《第五人格》游戏录屏素材**的工具，基于 OpenCV 进行图像匹配，并支持自适应 `scale_factor` 计算，方便高效地提取关键画面。
 
-**ID5-Clips** is a tool designed for **automatically clipping Identity V gameplay recordings**. It uses OpenCV for image matching and supports adaptive `scale_factor` calculation, making it easy to extract key frames efficiently.
-
 ---
 
 ## ✨ 功能 | Features
@@ -12,11 +10,6 @@
 ✅ **自适应 `scale_factor`**：根据视频分辨率计算最佳 `scale_factor`  
 ✅ **日志记录**：自动生成日志，记录检测结果  
 ✅ **多种优化**：支持 `mask` 过滤、Git LFS 处理大文件  
-
-✅ **Template Matching**: Automatically detect specific UI elements or frames in gameplay recordings  
-✅ **Adaptive `scale_factor` Calculation**: Computes the best `scale_factor` based on video resolution  
-✅ **Logging System**: Generates logs automatically for tracking results  
-✅ **Optimizations**: Supports `mask` filtering and Git LFS for large file handling  
 
 ---
 
