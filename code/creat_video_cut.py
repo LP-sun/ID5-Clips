@@ -87,7 +87,7 @@ def find_template_and_extract_clips(video_path,
         if frame_idx % 13 != 0:
             continue
         else:
-            print(f"\n[INFO] 正在处理第 {frame_idx} 帧...")
+            print(f"[INFO] 正在处理第 {frame_idx} 帧...")
 
         if frame_idx % 100 == 0:
             sys.stdout.flush()
@@ -108,13 +108,16 @@ def find_template_and_extract_clips(video_path,
 
     cap.release()
 
+    sub_dir = f"{video_name}_scale{scale_factor:.5f}"
+    output_path = os.path.join(output_dir, sub_dir)
+    os.makedirs(output_path, exist_ok=True)
     # 合并区间并用 FFmpeg 剪切
     merged = merge_intervals(match_intervals)
     print("\n=== 总共剪辑区间 ===")
     for idx, (start_f, end_f) in enumerate(merged):
         start_sec = start_f / fps
         duration = (end_f - start_f) / fps
-        out_file = os.path.join(output_dir, f"clip_{idx+1:03d}.mp4")
+        out_file = os.path.join(output_path, f"clip_{idx+1:03d}.mp4")
 
         ffmpeg_cmd = [
             "ffmpeg", "-y", "-ss", f"{start_sec:.2f}", "-i", video_path, "-t",
@@ -129,7 +132,7 @@ def find_template_and_extract_clips(video_path,
 
 
 if __name__ == "__main__":
-    video_path = "E:\\录屏\\20250323-134044.mp4"
+    video_path = "./video/van/4.mp4"
     template_path = "./terror_shock.png"
     output_dir = "./clips"
     threshold = 0.7
