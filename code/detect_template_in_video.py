@@ -3,8 +3,9 @@ import cv2
 import os
 import numpy as np
 import sys
-from lib import (load_scale_factors, save_scale_factors, get_scale_factor,
-                 create_red_mask, end)
+# 添加 code/ 目录到模块搜索路径
+sys.path.append(os.path.join(os.path.dirname(__file__)))
+from lib import get_scale_factor, create_red_mask, end
 
 
 def find_template_in_video(video_path,
@@ -82,6 +83,10 @@ def find_template_in_video(video_path,
         # 每10帧打印一次处理信息
         if frame_idx % 10 == 0:
             print(f"Processing frame #{frame_idx} ...")
+        else:
+            continue
+        if frame_idx % 100 == 0:
+            sys.stdout.flush()
 
         gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
@@ -91,7 +96,8 @@ def find_template_in_video(video_path,
                                    cv2.TM_CCOEFF_NORMED,
                                    mask=mask)
         _, max_val, _, max_loc = cv2.minMaxLoc(result)
-
+        if np.isinf(max_val) or np.isnan(max_val):
+            continue
         # 更新最大匹配值
         if max_val > maxmax:
             maxmax = max_val
@@ -116,11 +122,11 @@ def find_template_in_video(video_path,
 
 
 if __name__ == "__main__":
-    video_path = "./video/van/short.mp4"
+    video_path = "E:\录屏\\20250322-134043.mp4"
     template_path = "./terror_shock.png"
     output_dir = "./matched_frames"
     threshold_value = 0.7
-    start_frame_value = 0
+    start_frame_value = 10000
 
     find_template_in_video(video_path,
                            template_path,
